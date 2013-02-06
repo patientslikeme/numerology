@@ -1,0 +1,3 @@
+---
+default: --tags ~@wip --strict
+wip: --tags @wip --wip

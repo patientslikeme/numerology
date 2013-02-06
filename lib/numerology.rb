@@ -1,5 +1,9 @@
 require "numerology/version"
 
 module Numerology
-  # Your code goes here...
+  def format_like(example)
+    return example
+  end
 end
+
+Numeric.send(:include, ::Numerology)
