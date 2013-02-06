@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-Adds the format_like method to Numeric. Pass a string example of the format you are looking and numerology will attempt to format the number similarly. Currently the gem supports adding comma's, significant figures and leading 0's. Patches to add other formatting features are welcomed.
+Adds the format_like method to Numeric. Pass a string example of the format you are looking and numerology will attempt to format the number similarly.
+
+### Features
+Currently the gem supports the following formatting options. Patches to add other formatting features are welcomed.
+
+* Thousands separators.
+* Significant digits
+* Leading 0's
+
+### Examples
 
 ```ruby
 num = 123456
