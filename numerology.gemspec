@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "numerology"
   gem.require_paths = ["lib"]
   gem.version       = Numerology::VERSION
+
+  gem.add_development_dependency 'rake'
+  gem.add_development_dependency 'cucumber'
 end
