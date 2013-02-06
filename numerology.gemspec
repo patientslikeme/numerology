@@ -3,10 +3,10 @@ require File.expand_path('../lib/numerology/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Steven Hammond"]
-  gem.email         = ["shammond@northpub.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.email         = ["shammond@patientslikeme.com"]
+  gem.description   = %q{Format numbers using human readable examples.}
+  gem.summary       = %q{Number formatting by example.}
+  gem.homepage      = "https://github.com/patientslikeme/numerology"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
