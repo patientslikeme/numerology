@@ -1,4 +1,4 @@
-Given /^the integer (\d+)$/ do |num|
+Given /^the integer "(\d+)"$/ do |num|
   @target = num.to_i
 end
 
