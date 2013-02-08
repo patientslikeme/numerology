@@ -2,11 +2,19 @@ require "numerology/version"
 
 module Numerology
   def format_like(example)
-    return self.separate_thousands(example[-4]) if example =~ /(\D)\d{3}$/
+    if example =~ /^[0\s]/
+      formatted_string = "%#{example[0]}#{example.gsub(/\D/,'').length}d" % self 
+    else
+      formatted_string = self.to_s
+    end
+
+    formatted_string = separate_thousands(formatted_string, example[-4]) if example =~ /(\D)\d{3}$/
+
+    formatted_string
   end
 
-  def separate_thousands(separator)
-    self.to_s =~ /([^\.]*)(\..*)?/
+  def separate_thousands(formatted_string, separator)
+    formatted_string =~ /([^\.]*)(\..*)?/
     int, dec = $1.reverse, $2 ? $2 : ""
     while int.gsub!(/(,|\.|^)(\d{3})(\d)/, '\1\2'+separator+'\3')
     end

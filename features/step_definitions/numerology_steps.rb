@@ -7,5 +7,5 @@ When /^I format using the example "(.*?)"$/ do |example|
 end
 
 Then /^I produce "(.*?)"$/ do |expected|
-  assert_equal expected.strip, @result.strip
+  assert_equal expected, @result
 end

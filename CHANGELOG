@@ -1,0 +1,2 @@
+0.0.1 (2013/02/06): Add arbitrary thousands separators to integers.
+0.0.2 (2013/02/06): Left pad integers with 0s or spaces.
